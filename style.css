@@ -10,13 +10,26 @@ body {
   background-image: url('./images/background-image.jpg');
 }
 
-header{
-  color:white;
+main{
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+  /* padding:10px; */
+
+}
+header {
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   font-size: 50px;
+}
+
+#image {
+  color: rgb(255, 98, 0);
+  font-size: 50px;
+  background-color: rgb(84, 81, 81);
 }
 #whack-a-mole {
   background-color: darkolivegreen;
@@ -39,12 +52,31 @@ header{
   background-image: url('images/mole.png');
 }
 
-.playbtn{
-  margin-top:10px;
-  background-color:bisque;
-  width: 100%;
-  height: 100%;
-  font-size:50px;
-  font-weight:bold;
+.playbtn {
+  margin-top: 10px;
+  background-color: bisque;
+  /* width: 100%;
+  height: 100%; */
+  font-size: 50px;
+  font-weight: bold;
   cursor: pointer;
 }
+
+.middle-section {
+  display: flex;
+  font-size: 40px;
+}
+
+.play-section {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: center;
+}
+@media (min-width: 300px) {
+  body {
+    color: rgb(14, 13, 13);
+  }
+}
+
+
